@@ -26,15 +26,7 @@ export const title = tv({
   },
   compoundVariants: [
     {
-      color: [
-        "violet",
-        "yellow",
-        "blue",
-        "cyan",
-        "green",
-        "pink",
-        "foreground",
-      ],
+      color: ["violet", "yellow", "blue", "cyan", "green", "pink", "foreground"],
       class: "bg-clip-text text-transparent bg-gradient-to-b",
     },
   ],
@@ -47,6 +39,31 @@ export const subtitle = tv({
       true: "!w-full",
     },
   },
+  defaultVariants: {
+    fullWidth: true,
+  },
+});
+export const sectionTitle = tv({
+  base: "section-title w-full md:w-1/2 my-2 text-2xl lg:text-3xl  block max-w-full font-medium",
+  variants: {
+    fullWidth: {
+      true: "!w-full",
+    },
+  },
+  defaultVariants: {
+    fullWidth: true,
+  },
+});
+export const sectionSubTitle = tv({
+  base: "my-2 text-sm  uppercase block max-w-full tracking-[.25em]",
+
+  defaultVariants: {
+    fullWidth: true,
+  },
+});
+export const cardTitle = tv({
+  base: "my-2 text-xl lg:text-2xl font-medium ",
+
   defaultVariants: {
     fullWidth: true,
   },

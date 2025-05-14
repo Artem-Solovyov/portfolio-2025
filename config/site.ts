@@ -1,20 +1,13 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Soloviov Artem - Web Developer | Software Engineer | Front-end Developer",
+  description:
+    "Web developer with 3+ years of experience building scalable, high-performance, and visually striking web products — from landing pages to complex CRMs.",
   navItems: [
     {
       label: "Home",
       href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
     },
     {
       label: "Blog",
@@ -42,28 +35,11 @@ export const siteConfig = {
       label: "Team",
       href: "/team",
     },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/Artem-Solovyov",
+    telegram: "https://t.me/tema_slvv",
+    linkedin: "https://www.linkedin.com/in/art-soloviov/",
+    mail: "mailto:solovevartem892@gmail.com",
   },
 };
