@@ -141,8 +141,8 @@ export const AbouteSection = () => {
                     business logic.
                   </li>
                   <li>
-                    I actively choose and integrate libraries based on the problems we're solving — balancing speed of
-                    development with maintainability.
+                    I actively choose and integrate libraries based on the problems we&apos;re solving — balancing speed
+                    of development with maintainability.
                   </li>
                   <li>
                     Strong collaboration with backend and stakeholders to build scalable and maintainable features.
