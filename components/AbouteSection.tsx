@@ -4,7 +4,43 @@ import { title2, title3, tools } from "./primitives";
 import Image from "next/image";
 import { FaUserSecret } from "react-icons/fa";
 import { Chip } from "@heroui/chip";
-
+const jobs = [
+  {
+    start: "01.03.2023",
+    end: "27.12.2024",
+    title: "Web Developer (Landing Pages & Wordpress & CRM)  — IT Outsourcing Company ",
+    stack: ["JavaScript", "WordPress (custom themes & plugins)", "Next.js", "Redux", "Material UI", "WebSockets"],
+    experience: [
+      "Started with building websites from scratch as well as maintaining, optimizing, and expanding existing ones — using pure JavaScript, NextJS and WordPress, including both custom themes and projects based on existing solutions.",
+      "Later moved on to develop a custom CRM system for the company. The project started with a small team and eventually grew to 6 people. We built it from scratch using Next.js, Redux, WebSockets and Material UI.",
+      "Integrated complex business modules including a built-in task manager (similar to Jira) to streamline team operations.",
+      "Gained deep understanding of how frontend and backend work together in enterprise-scale environments.",
+    ],
+  },
+  {
+    start: "01.05.2024",
+    end: "6.01.2025",
+    title: "Frontend Developer (Landing Pages) — Performance Marketing Studio",
+    stack: ["JavaScript", "Gulp", "Webpack"],
+    experience: [
+      "Built high-converting marketing websites to drive client acquisition and product sales.",
+      "Focused on performance, SEO, and engaging animations — creating pixel-perfect, conversion-optimized interfaces.",
+      "Used task runners and bundlers like Gulp and Webpack to improve development workflows and production builds.",
+    ],
+  },
+  {
+    start: "06.01.2025",
+    end: "",
+    title: "Frontend Engineer (CRM Project) — Arbitrage Marketing Company",
+    stack: ["Next.js", "Hero UI", "Chart JS"],
+    experience: [
+      "Currently leading frontend development in a small but agile team (1 frontend + 1 backend developer).",
+      "Designing and evolving a complex CRM tailored for performance marketing, involving rapidly changing business logic.",
+      "I actively choose and integrate libraries based on the problems we're solving — balancing speed of development with maintainability.",
+      "Strong collaboration with backend and stakeholders to build scalable and maintainable features.",
+    ],
+  },
+];
 export const AbouteSection = () => {
   return (
     <section id="resume" className="flex flex-col gap-4 py-10 md:py-16">
@@ -45,110 +81,34 @@ export const AbouteSection = () => {
                 <MdWorkHistory size={24} />
                 <h3 className={title2()}>Experience</h3>
               </div>
-              <div className=" flex flex-col gap-2">
-                <h4 className={title3()}>Web Developer — IT Outsourcing Company (Team of 250–300 employees)</h4>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span> Stack:</span>
-
-                  <Chip size="md" color="primary" variant="flat">
-                    JavaScript
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    WordPress (custom themes & plugins)
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Next.js
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Redux
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Material UI
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    WebSockets
-                  </Chip>
+              {jobs.map((job) => (
+                <div key={job.title} className=" flex flex-col gap-2">
+                  <h4 className={title3()}>
+                    {job.title}
+                    {job.end ? (
+                      ""
+                    ) : (
+                      <>
+                        {" "}
+                        <span className="text-sm italic">(Current role)</span>
+                      </>
+                    )}
+                  </h4>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span> Stack:</span>
+                    {job.stack.map((el) => (
+                      <Chip key={el} color="primary" variant="flat">
+                        {el}
+                      </Chip>
+                    ))}
+                    <ul className="ml-6 list-disc flex flex-col gap-2">
+                      {job.experience.map((el) => (
+                        <li key={el}>{el}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <ul className="ml-6 list-disc flex flex-col gap-2">
-                  <li>
-                    Started with building and maintaining websites using pure JavaScript and WordPress — including both
-                    custom themes and projects based on existing ones.
-                  </li>
-                  <li>
-                    Later promoted to help develop a custom CRM system from scratch using Next.js and Material UI, in a
-                    6-person team.
-                  </li>
-                  <li>
-                    Integrated complex business modules including a built-in task manager (similar to Jira) to
-                    streamline team operations.
-                  </li>
-                  <li>
-                    Gained deep understanding of how frontend and backend work together in enterprise-scale
-                    environments.
-                  </li>
-                </ul>
-              </div>
-              <div className=" flex flex-col gap-2">
-                <h4 className={title3()}>Frontend Developer — Performance Marketing Studio</h4>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span> Stack:</span>
-
-                  <Chip size="md" color="primary" variant="flat">
-                    JavaScript
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Gulp
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Webpack
-                  </Chip>
-                </div>
-                <ul className="ml-6 list-disc flex flex-col gap-2">
-                  <li>Built high-converting marketing websites to drive client acquisition and product sales.</li>
-                  <li>
-                    Focused on performance, SEO, and engaging animations — creating pixel-perfect, conversion-optimized
-                    interfaces.
-                  </li>
-                  <li>
-                    Used task runners and bundlers like Gulp and Webpack to improve development workflows and production
-                    builds.
-                  </li>
-                </ul>
-              </div>
-              <div className=" flex flex-col gap-2">
-                <h4 className={title3()}>
-                  Frontend Engineer — Arbitrage Marketing Company <span className="italic text-sm">(Current role)</span>
-                </h4>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span> Stack:</span>
-
-                  <Chip size="md" color="primary" variant="flat">
-                    Next.js
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Hero UI
-                  </Chip>
-                  <Chip size="md" color="primary" variant="flat">
-                    Chart JS
-                  </Chip>
-                </div>
-                <ul className="ml-6 list-disc flex flex-col gap-2">
-                  <li>
-                    Currently leading frontend development in a small but agile team (1 frontend + 1 backend developer).
-                  </li>
-                  <li>
-                    Designing and evolving a complex CRM tailored for performance marketing, involving rapidly changing
-                    business logic.
-                  </li>
-                  <li>
-                    I actively choose and integrate libraries based on the problems we&apos;re solving — balancing speed
-                    of development with maintainability.
-                  </li>
-                  <li>
-                    Strong collaboration with backend and stakeholders to build scalable and maintainable features.
-                  </li>
-                </ul>
-              </div>
+              ))}
             </article>
           </div>
 
