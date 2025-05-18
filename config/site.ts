@@ -6,36 +6,19 @@ export const siteConfig = {
     "Web developer with 3+ years of experience building scalable, high-performance, and visually striking web products — from landing pages to complex CRMs.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Highlights",
+      href: "#about",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Portfolio",
+      href: "#portfolio",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Resume",
+      href: "#resume",
     },
   ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-  ],
+  navMenuItems: [],
   links: {
     github: "https://github.com/Artem-Solovyov",
     telegram: "https://t.me/tema_slvv",

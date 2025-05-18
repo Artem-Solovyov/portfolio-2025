@@ -54,7 +54,7 @@ export const ExperienceSection = () => {
     }
   };
   return (
-    <section className="flex flex-col  justify-center gap-4 py-10 md:py-16">
+    <section id="about" className="flex flex-col  justify-center gap-4 py-10 md:py-16 relative z-0">
       <SectionTitle
         subtitle="Career Highlights"
         title={
@@ -84,8 +84,8 @@ export const ExperienceSection = () => {
                   <rect width="100%" height="100%" fill="url(#customPattern)" />
                 </svg>
               </div>
-              <div className="card__content p-4 lg:p-6 gap-2">
-                <div className="w-8 h-8 border-1 rounded-md border-default-400 bg-default-200 flex justify-center items-center">
+              <div className="card__content p-4 lg:p-6 gap-1">
+                <div className="w-9 h-9 border-1 mb-4 rounded-md border-default-400 bg-default-200 flex justify-center items-center">
                   {card.icon}
                 </div>
 
