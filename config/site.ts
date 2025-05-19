@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Soloviov Artem - Web Developer | Software Engineer | Front-end Developer",
   description:
-    "Web developer with 3+ years of experience building scalable, high-performance, and visually striking web products — from landing pages to complex CRMs.",
+    "Web developer with 3+ years of experience building scalable, high-performance, and visually striking web products - from landing pages to complex CRMs.",
   navItems: [
     {
       label: "Highlights",

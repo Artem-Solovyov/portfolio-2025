@@ -12,7 +12,7 @@ export const HeroSection = () => {
     <section className="flex flex-col items-center justify-center gap-6 py-8 md:py-10">
       <div className="inline-block max-w-2xl text-center justify-center">
         <span className={title()}>Experienced&nbsp;</span>
-        <span className={title({ color: "violet" })}>Web Developer&nbsp;</span>
+        <span className={title({ color: "blue" })}>Web Developer&nbsp;</span>
         <br />
         <span className={title()}>Crafting Scalable and Engaging Frontend Solutions</span>
         <div className={subtitle({ class: "mt-4" })}>
@@ -31,7 +31,7 @@ export const HeroSection = () => {
           })}
           href={siteConfig.links.telegram}
         >
-          <FaTelegramPlane />
+          <FaTelegramPlane size={20} />
           Telegram
         </Link>
         <Link
@@ -49,9 +49,9 @@ export const HeroSection = () => {
         <Card radius="md">
           <CardBody className="py-2 px-4 pr-2 ">
             <div className="flex gap-3 items-center">
-              <span>Resume Preview (PDF) </span>
+              <span>Resume (PDF) </span>
               <Button variant="flat" color="primary">
-                View
+                Download
               </Button>
             </div>
           </CardBody>

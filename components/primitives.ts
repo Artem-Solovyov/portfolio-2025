@@ -61,13 +61,7 @@ export const sectionSubTitle = tv({
     fullWidth: true,
   },
 });
-export const tools = tv({
-  base: "my-2 text-md  uppercase block max-w-full tracking-[.25em]",
 
-  defaultVariants: {
-    fullWidth: true,
-  },
-});
 export const cardTitle = tv({
   base: "text-xl lg:text-2xl font-medium ",
   defaultVariants: {
@@ -75,7 +69,7 @@ export const cardTitle = tv({
   },
 });
 export const title2 = tv({
-  base: "text-lg lg:text-xl font-medium italic underline",
+  base: "text-lg lg:text-xl font-medium",
   defaultVariants: {
     fullWidth: true,
   },
