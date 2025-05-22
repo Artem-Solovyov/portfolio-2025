@@ -45,7 +45,7 @@ export const HeroSection = () => {
         </Link>
       </div>
 
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <Card radius="md">
           <CardBody className="py-2 px-4 pr-2 ">
             <div className="flex gap-3 items-center">
@@ -56,7 +56,7 @@ export const HeroSection = () => {
             </div>
           </CardBody>
         </Card>
-      </div>
+      </div> */}
     </section>
   );
 };
